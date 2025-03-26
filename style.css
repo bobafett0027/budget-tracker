@@ -1,34 +1,35 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: Arial, sans-serif; /* Sets the font of the page */
+    background-color: #f4f4f4;  /* Light gray background color */
     margin: 0;
     padding: 0;
 }
 
 .container {
     width: 80%;
-    margin: 20px auto;
-    background-color: white;
-    padding: 20px;
+    margin: 20px auto; /* Centers the content */
+    background-color: white;  /* White background for the container */
+    padding: 20px;  /* Adds padding inside the container */
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   /* Adds shadow around the container */
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /* Centers the title */
+    color: #333; /* Dark gray color for the title */
 }
 
 form {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 20px;  /* Adds space below the form */
 }
 
 form input {
     padding: 10px;
     width: 30%;
-    margin-right: 10px;
-    border: 1px solid #ccc;
+    margin-right: 10px;  /* Adds space around the inputs */
+    border: 1px solid #ccc; /* Light border around the input fields */
     border-radius: 5px;
 }
 
@@ -39,21 +40,23 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
 }
 
 form button:hover {
-    background-color: #218838;
+    background-color: #218838; /* Makes the button take up the full width of the form */
 }
 
 table {
     width: 100%;
-    border-collapse: collapse;
+    border-collapse: collapse;  /* Removes space between table borders */
 }
 
 table th, table td {
     padding: 10px;
     border: 1px solid #ccc;
     text-align: center;
+    
 }
 
 table th {
@@ -67,7 +70,7 @@ table td button {
 }
 
 button.edit {
-    background-color: #ffc107;
+    background-color: #ffc107;  /* Yellow background for edit buttons */
 }
 
 button.edit:hover {
@@ -75,7 +78,7 @@ button.edit:hover {
 }
 
 button.delete {
-    background-color: #dc3545;
+    background-color: #dc3545; /* Red background for delete buttons */
 }
 
 button.delete:hover {

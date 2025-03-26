@@ -8,27 +8,31 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="container"> <!-- Container for the whole content of the page -->
         <h1>Budget Tracker</h1>
-
+<!-- Form for adding new expense items -->
         <form id="budgetForm">
-            <input type="text" id="item" placeholder="Item" required>
-            <input type="number" id="amount" placeholder="Amount" required>
-            <button type="submit">Add Item</button>
+            <input type="text" id="item" placeholder="Item" required> <!-- Input for the expense name -->
+            <input type="number" id="amount" placeholder="Amount" required> <!-- Input for the expense amount -->
+            <button type="submit">Add Item</button>  <!-- Button to add the expense to the table -->
         </form>
-
+  <!-- Table to display the list of expenses -->
         <table>
             <thead>
                 <tr>
-                    <th>Item</th>
-                    <th>Amount</th>
-                    <th>Actions</th>
+                    <th>Item</th> <!-- Column for item name -->
+                    <th>Amount</th> <!-- Column for the amount -->
+                    <th>Actions</th> <!-- Column for actions (edit/delete) -->
                 </tr>
             </thead>
             <tbody id="budgetTable">
                 <!-- Budget items will be dynamically added here -->
             </tbody>
         </table>
+         <!-- Display the total expense -->
+    <div>
+        <h2>Total: <span id="total">0</span></h2> <!-- Display the total expenses -->
+      </div>
     </div>
 
     <script src="script.js"></script>
